@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Facebook Clone | Aman Raj </title>
+     <!-- Css link  -->
+     <link rel="stylesheet" href="style.css">
+     <!-- Font Awesome Cdn link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+
+     <!-- body overlay  -->
+     <div class="overlay"></div>
+     <div id="wrapper" class="wrapper">
+
+          <!------------- Starting header section ----------- -->
+          <header class="flex flex-around align-items">
+               <div id="logo">
+                    <h2 class="big-size txt-black white-space">Social <span class="heading-size">Book</span></h2>
+               </div>
+               <div id="searchBar" class="flex align-items flex-between">
+                    <input type="text" placeholder="Search the story..." class="txt-black">
+                    <i class="fa-solid fa-magnifying-glass cursor-point txt-black"></i>
+               </div>
+               <div id="details-option" class="flex align-items header-details">
+                    <button class="white-space primary-btn bg-pink txt-white border-none cursor-point">Add post</button>
+                    <div class="add-profile header-profile full-flex">
+                         <img src="images/add-profile.webp" alt=".." class="cursor-point">
+                    </div>
+               </div>
+          </header>
+          <!------------- Ending header section  ------------->
+
+
+
+          <!------------- Starting Main section  ------------->
+          <div id="main-cont">
+               <!-- left section -->
+               <div id="left-sect">
+                    <div class="top-option flex align-items cursor-point flex-between">
+                         <div class="add-profile user-profile">
+                              <img src="images/profile-2.jpeg" alt=".." class="cursor-point">
+                         </div>
+                         <div class="profile-text">
+                              <h4 class="txt-black">Aman Raj</h4>
+                              <p class="txt-gray txt-center small-size" style="margin-top: 3px">UserAman@gmail.com</p>
+                         </div>
+                    </div>
+                    <div class="select-option-menus" style="margin-top: 20px;">
+                         <div class="option-items cursor-point flex flex-end align-items active">
+                              <i class="fa-solid fa-house active-icn"></i>
+                              <p class="txt-black  meduim-size">Home</p>
+                         </div>
+                         <div class="option-items cursor-point flex align-items flex-end">
+                              <i class="fa-brands fa-internet-explorer active-icn"></i>
+                              <p class="txt-black  meduim-size">Explore</p>
+                         </div>
+                         <div class="option-items cursor-point flex align-items flex-end">
+                              <i class="fa-solid fa-bell active-icn"></i>
+                              <p class="txt-black  meduim-size">Notifications</p>
+                         </div>
+                         <div class="option-items message-opt  cursor-point flex align-items flex-end" id="message_opt">
+                              <i class="fa-solid fa-message active-icn"></i>
+                              <p class="txt-black  meduim-size">Messages</p>
+                         </div>
+                         <div class="option-items cursor-point flex align-items flex-end">
+                              <i class="fa-solid fa-book active-icn"></i>
+                              <p class="txt-black  meduim-size">Books and Marks</p>
+                         </div>
+                         <div class="option-items Theme-icn cursor-point flex align-items flex-end">
+                              <i class="fa-brands fa-affiliatetheme active-icn"></i>
+                              <p class="txt-black  meduim-size">Themes</p>
+                         </div>
+                         <div class="option-items cursor-point flex align-items flex-end">
+                              <i class="fa-solid fa-gear active-icn"></i>
+                              <p class="txt-black  meduim-size">Settings</p>
+                         </div>
+
+                    </div>
+                    <div class="button" style="width:100%; margin-top: 8px;">
+                         <button id="addBtn" style="width:100%"
+                              class="white-space primary-btn bg-pink txt-white border-none cursor-point">Add
+                              post</button>
+                    </div>
+               </div>
+               <!-- themes area  -->
+               <div id="themes-area-cont" class="flex justify-center themeArea align-items">
+                    <div class="crossIcn" id="crossIcn"><i class=" fa-solid fa-xmark"></i></div>
+                    <div class="themes-area align-items flex" style="flex-direction: column;">
+                         <span></span>
+                         <h4 class="medium-size txt-black">Customize your themes</h4>
+                         <div class="background-option">
+                              <!-- dark mode  -->
+                              <p class="small-size txt-black txt-center" style="font-weight: 500;">Dark mode</p>
+                              <div class="mode-cont flex flex-center">
+                                   <div class="mode-itms mode-dark" id="first_dark"></div>
+                                   <div class="mode-itms mode-dark" id="second_dark"></div>
+                              </div>
+                              <!-- light mode  -->
+                              <p class="small-size txt-center txt-black" style="font-weight: 500; margin-top: 20px;">
+                                   Light mode
+                              </p>
+                              <div class="mode-cont flex flex-center" id="light_mode_option">
+                                   <div class="mode-itms mode-light"></div>
+                              </div>
+                              <!-- font size mode  -->
+                              <p class="small-size txt-black txt-center" style="font-weight: 500; margin-top: 20px;">
+                                   Font size</p>
+                              <div class="mode-cont flex flex-center">
+                                   <div class="mode-itms mode-font" id="small_font"></div>
+                                   <div class="mode-itms mode-font" id="medium_font"></div>
+                                   <div class="mode-itms mode-font" id="big_font"></div>
+                              </div>
+                              <!-- primary color mode  -->
+                              <p class="small-size txt-black txt-center" style="font-weight: 500; margin-top: 20px;">
+                                   Primary color</p>
+                              <div class="mode-cont flex flex-center">
+                                   <div class="mode-itms mode-color" id="color_1"></div>
+                                   <div class="mode-itms mode-color" id="color_2"></div>
+                                   <div class="mode-itms mode-color" id="color_3"></div>
+                                   <div class="mode-itms mode-color" id="color_4"></div>
+                                   <div class="mode-itms mode-color" id="color_5"></div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <!-- bottom section  -->
+               <div id="bottom-sect">
+                    <div id="status-sect" class="flex">
+
+                    </div>
+                    <div id="searchBar" class="flex align-items create-post flex-between"
+                         style="width: 100%;margin-top: 10px;">
+                         <input type="text" placeholder="Create your story..." class="txt-black" style="width: 100%;">
+                         <button class="white-space primary-btn bg-pink txt-white border-none cursor-point"
+                              style="height: 100%;">Create post</button>
+                    </div>
+
+                    <!-- Posts area  -->
+                    <div id="post-area-cont">
+                         <div id="post-area">
+
+
+                         </div>
+                    </div>
+               </div>
+
+               <!-- Right section  -->
+               <div id="right-sect" class="right-sect">
+                    <!-- top message -->
+                    <div class="messageArea">
+                         <div class="top-txt flex flex-between">
+                              <h4 class="medium-txt txt-black">Messages</h4>
+                              <div class="add-profile flex  posted-peopple user-profile" style="gap: 10px;">
+                                   <img src="images/profile-3.jpeg" alt=".." class="cursor-point">
+                              </div>
+                         </div>
+
+                         <div id="searchBar" class="flex align-items flex-between" style="width: 100%;">
+                              <i class="fa-solid fa-magnifying-glass cursor-point txt-black"></i>
+                              <input type="text" placeholder="Search your message..." class="txt-black">
+                         </div>
+
+                         <div class="message-cont">
+                              
+                         </div>
+
+                    </div>
+               </div>
+          </div>
+          <!------------ Ending Main section  ------------>
+
+
+     </div>
+
+     <!-- Javascript link  -->
+     <script src="script.js"></script>
+</body>
+
+</html>
